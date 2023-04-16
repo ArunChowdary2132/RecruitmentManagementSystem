@@ -1,0 +1,359 @@
+
+<html lang="en"> 
+
+<head>
+    
+    <link rel="icon" href="images/Vignan_logo.png">
+        <meta charset=" utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is official application of Training and Placement Cell, VIIT.">
+    <link rel="stylesheet" href="css/abouttext.css" />
+    <link rel="stylesheet" href="css/aboutcss.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-apexcharts"></script>
+    <!-- <meta name="keywords" content="gndec,gne,t&p,cell,training and placement,placement cell,placement training,GNDEC,Ludhiana,job,company,camups placement, off campus, gne college,training and placement cell,courses with placement,javascript training,training and placement companies,training and placement officer,job training and placement,training and placement cell project"> -->
+
+    <title>About Viit TPC</title>
+
+    <!-- One Signal -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "775ce28f-b0b1-4132-85e3-fa3dd5ab3aa4",
+            });
+        });
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    
+    <link href="styles.css" rel="stylesheet">
+    <link href="top.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="chat.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  
+
+
+  <body>
+    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="">
+                <!-- <img src="" width="112" height="28"> -->
+                <img src="images/Vignan_logo.png">
+            </a>
+    
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    <strong>Home</strong>
+                </a>
+                <a class="navbar-item" href="/statistics" >
+                    <strong>Stats</strong>
+                </a>
+                <a class="navbar-item" href="/companies" >
+                    <strong>Companies</strong>
+                </a>
+                <a class="navbar-item" href="/about">
+                    <strong>About us</strong>
+                </a>
+                <a class="navbar-item" href="/contact">
+                    <strong>Contact us</strong>
+                </a>
+               
+        
+        </div>
+                
+            <!-- {% if user.is_authenticated %} -->
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <!-- <div class="buttons">
+                        <a class="button is-primary is-light " href="/">
+                        <strong><i class="fa fa-user" aria-hidden="true"></i> {{user.username}}</strong>
+                        </a>
+                        <a class="button is-danger is-light" href="/logout">
+                            <strong>Log out</strong>
+                        </a>
+                    </div> -->
+                    <!-- {% else %} -->
+                  
+                        <a class="button is-light is-danger" href="/studentlogin" target="_blank">
+                        <strong>Student Log in</strong>
+                        </a>
+                        <a class="button is-light is-danger" href="/alumnilogin" target="_blank">
+                            <strong>Alumni Log in</strong>
+                            </a>
+                        <a class="button is-light is-danger " href="/admin">
+                            <strong>Admin Login</strong>
+                            </a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- {% endif %} -->
+        </div>
+    </nav>
+    <!-- HOME PAGE STARTS -->
+       </section>
+    <!-- SECTION ENDS -->
+    <!-- UPCOMING EVENTS STARTS -->
+    <div class="container">
+        <!-- {% if user.is_authenticated %}
+        {% include 'includes/Events_login.html' %}
+        {% else %}
+        {% include 'includes/Events_not_login.html'%}
+        {% endif %} -->
+    </div>
+    <!-- UPCOMING EVENT ENDS -->
+
+    <!-- JS FILES -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- <script src="js/tabs.js"></script> -->
+    <style>
+
+    </style>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+        $("#button").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 1000);
+        });
+        $("#button1").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#events").offset().top
+            }, 1000);
+        });
+    </script>
+    <!-- <script src="js/main.js"></script> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- <script src="js/counter.js"></script> -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+</head>
+    <!-- Fonts -->
+   
+
+
+<body>
+
+    <body>
+        
+        
+       
+      
+                <span class="jss18">
+                
+                   
+         </span>
+                <div class="jss562">
+                    <div class="jss566">
+                        <!-- <div class="jss568"><span class="jss564">🏆</span>
+                            <h3 class="MuiTypography-root jss563 MuiTypography-h3"> Academic Achievements &amp; Quality
+                            </h3>
+                        </div> -->
+                        <h1 class="MuiTypography-root jss565 MuiTypography-h1">Informative platform for VIIT students,
+                            staff &amp; more.</h1>
+                        <p class="MuiTypography-root jss567 MuiTypography-body1">Welcome to Training &amp; Placement
+                            Cell,<br>A family that takes initiatives.</p>
+                    </div>
+                    <div><img src="images/slide1.jpg"></div>
+                </div>
+                <div class="jss569">
+                    <div class="jss573">
+                        <p class="MuiTypography-root jss570 MuiTypography-body1">About T&amp;P</p>
+                        <p class="MuiTypography-root jss571 MuiTypography-body1">" The goal of Training &amp; Placement
+                            Cell is to provide students with a platform for using their potential to gain valuable
+                            experience by working in industry. "</p>
+                        <p class="MuiTypography-root jss572 MuiTypography-body1">It also acts as the interface between
+                            various companies seeking talented young graduates and post graduates in various
+                            disciplines. The Cell is well equipped with ample infrastructure in Terms of Testing halls,
+                            Consultancy Hall, Conference room, for Pre Placement Talk, Presentations etc and Computer
+                            labs for online tests also the cell has video conference facility available for the
+                            students.</p>
+                        <p class="MuiTypography-root jss574 MuiTypography-body1">Top Companies Visiting Our Campus</p>
+                        <marquee behavior="scroll" direction="left">
+                            <img src="images/amazon.png" width="550" height="550" alt="Flying Bat">
+                            <img src="images/Accenturelogo.jpg"width="550" height="550" alt="Flying Bat">
+                            <img src="images/Delloite.png" width="550" height="550" alt="Flying Bat">
+                            <img src="images/Microsoft.png" width="550" height="550" alt="Flying Bat">
+
+                            </marquee>
+                        <!-- <div class="jss576">
+                            <img src="images/amazon.png">
+                            <img src="images/infosys.png">
+                            <img src="images/tcs.svg">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="jss578">
+                    <p class="MuiTypography-root jss577 MuiTypography-body1">Core Details</p>
+                </div>
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-grid-md-12">
+                    <div class="jss542" >
+                        <div class="jss544"><svg class="MuiSvgIcon-root jss549" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M6.5 10h-2v7h2v-7zm6 0h-2v7h2v-7zm8.5 9H2v2h19v-2zm-2.5-9h-2v7h2v-7zm-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5z">
+                                </path>
+                            </svg>
+                            <h2 class="MuiTypography-root jss550 MuiTypography-h5">Training</h2>
+                            <h2 class="MuiTypography-root jss551 MuiTypography-h5">The Central Training & Placement Cell (CTPC) endeavors to provide career development job oriented training to the students headed by experienced coordinators. Through this cell, programmes on Communication Development, Aptitude, Personality Development, Group discussion and Motivation are provided by expert professionals.</h2>
+                        </div>
+                        <div class="jss544"><svg class="MuiSvgIcon-root jss549" focusable="false" viewBox="0 0 24 24"
+                                aria-hidden="true" style="width:100px">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z">
+                                </path>
+                            </svg>
+                            <h2 class="MuiTypography-root jss550 MuiTypography-h5">Placements</h2>
+                            <h2 class="MuiTypography-root jss551 MuiTypography-h5">The cell provides enough opportunities for the students to get placed in the National and Multinational companies.
+                                 The cell has been playing dual role of assessing ever-changing industrial requirements grooming and estimating inherent talents of the students.</h2>
+                        </div>
+                        <div class="jss544"><svg class="MuiSvgIcon-root jss549" focusable="false" viewBox="0 0 24 24"
+                                aria-hidden="true" >
+                                <path
+                                    d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5 0 .12.05.23.13.33.41.47.64 1.06.64 1.67 0 1.38-1.12 2.5-2.5 2.5zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5 0-.16-.08-.28-.14-.35-.41-.46-.63-1.05-.63-1.65 0-1.38 1.12-2.5 2.5-2.5H16c2.21 0 4-1.79 4-4 0-3.86-3.59-7-8-7z">
+                                </path>
+                                <circle cx="6.5" cy="11.5" r="1.5"></circle>
+                                <circle cx="9.5" cy="7.5" r="1.5"></circle>
+                                <circle cx="14.5" cy="7.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="11.5" r="1.5"></circle>
+                            </svg>
+                            <h2 class="MuiTypography-root jss550 MuiTypography-h5">Additional Activities</h2>
+                            <h2 class="MuiTypography-root jss551 MuiTypography-h5">Prepare students for various campus recruitments by arranging training in Aptitude tests, Group discussions, Preparing for Technical and HR interviews through professional trainers.
+                                Promote career counseling by organizing guest speakers by senior corporate personnel and by the alumni students.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiGrid-root jss552 MuiGrid-container MuiGrid-grid-md-12">
+                    <div class="jss553">
+                        <h2 class="MuiTypography-root jss577 MuiTypography-h5">Training Process</h2>
+                    </div>
+                    <div class="jss543">
+                        <div class="jss545">
+                            <!-- <h2 class="MuiTypography-root jss550 MuiTypography-h5">First Year</h2> -->
+                            <img src="images/Screenshot year1.jpg" class="jss554" height="100%">
+                        </div>
+                        <div class="jss545">
+                            <!-- <h2 class="MuiTypography-root jss550 MuiTypography-h5">Second Year</h2> -->
+                            <img src="images/Screenshot year2.jpg" class="jss554" height="100%">
+                        </div>
+                        <div class="jss545">
+                            <!-- <h2 class="MuiTypography-root jss550 MuiTypography-h5">Third Year</h2> -->
+                            <img src="images/Screenshot year3.jpg" class="jss554" height="100%">
+                        </div>
+                        <div class="jss545">
+                            <!-- <h2 class="MuiTypography-root jss550 MuiTypography-h5">Fourth Year</h2> -->
+                            <img src="images/Screenshot year4.jpg" class="jss554" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="jss578">
+                    <p class="MuiTypography-root jss577 MuiTypography-body1">Words from T&amp;P Officer</p>
+                </div>
+                <div class="jss584"><span class="jss585">“</span>
+                    <p class="MuiTypography-root jss586 MuiTypography-body1">The Central Training and Placement Cell, VIIT
+                        apart from giving an outstanding placement record provides the platform for students to gain
+                        most from the personality development and marketing experience program. We focus on not just
+                        creating engineers but pioneers and leaders for the future development of our nation. The Central
+                        Training &amp; Placement Cell looks after the interests of the students and the recruiting
+                        organizations by acting as a channel of communication between them.</p><span
+                        class="jss585">”</span>
+                </div>
+                <div class="jss587">
+                    <div class="jss558"><img src="images/dean t&p photo.jpg" class="jss557">
+                    </div>
+                    <div class="jss590">
+                        <p class="MuiTypography-root jss588 MuiTypography-body1">Dr.B.Prasad</p>
+                        <p class="MuiTypography-root jss589 MuiTypography-body1">Dean-Training &amp; Placements</p>
+                    </div>
+                </div>
+                <div class="MuiGrid-root jss552 MuiGrid-container">
+                    <div class="jss553">
+                        <h2 class="MuiTypography-root jss577 MuiTypography-h5">How T&amp;P Cell Works?</h2>
+                    </div>
+                    <div class="jss543">
+                        <div class="jss591">
+                            <p class="MuiTypography-root jss592 MuiTypography-body1">01</p>
+                            <h2 class="MuiTypography-root jss550 MuiTypography-h5">Database Formation</h2>
+                            <h2 class="MuiTypography-root jss551 MuiTypography-h5">Collects the record of students of
+                                particular year and forms database that MNCs demand as a record from the institution.
+                            </h2>
+                        </div>
+                        <div class="jss591">
+                            <p class="MuiTypography-root jss592 MuiTypography-body1">02</p>
+                            <h2 class="MuiTypography-root jss550 MuiTypography-h5">Finding Contacts</h2>
+                            <h2 class="MuiTypography-root jss551 MuiTypography-h5">Fetches contacts of Human Resource
+                                Managers of different Companies to get information regarding job offering for students
+                                by their organisations.</h2>
+                        </div>
+                        <div class="jss591">
+                            <p class="MuiTypography-root jss592 MuiTypography-body1">03</p>
+                            <h2 class="MuiTypography-root jss550 MuiTypography-h5">Getting Confirmations</h2>
+                            <h2 class="MuiTypography-root jss551 MuiTypography-h5">Training and Placement cell gets
+                                confirmation from HRs for conducting placement drive on particular dates as per directed
+                                and arranging hospitality services and venue.</h2>
+                        </div>
+                        <div class="jss591">
+                            <p class="MuiTypography-root jss592 MuiTypography-body1">04</p>
+                            <h2 class="MuiTypography-root jss550 MuiTypography-h5">Placement Drives</h2>
+                            <h2 class="MuiTypography-root jss551 MuiTypography-h5">Smoothly conducts placement drive for
+                                the students by different MNCs.</h2>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+       
+    </body>
+    <div id="example"></div>
+   
+</body>
+
+</html>
+

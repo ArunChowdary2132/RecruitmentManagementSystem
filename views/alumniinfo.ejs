@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* .container {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+
+.table {
+  width: 100%;
+  border: 1px solid #EEEEEE;
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: 18px 0;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  padding: 18px 0;
+}
+.table-row:nth-of-type(odd) {
+  background: #EEEEEE;
+}
+
+.table-data, .header__item {
+  flex: 1 1 20%;
+  text-align: center;
+  /* padding: 0px 50px; */
+}
+
+.header__item {
+  text-transform: uppercase;
+  
+}
+
+.filter__link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.filter__link::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter__link.desc::after {
+  content: "(desc)";
+}
+.filter__link.asc::after {
+  content: "(asc)";
+}
+    </style>
+</head>
+<body>
+ <form action="/alumniinfo" method="post">
+    <div class="container">
+        <table>
+          <thead>
+            <tr class="table-header">
+              <th class="header__item filter__link" scope="col">Check to Delete companies</th>
+                <th class="header__item filter__link" scope="col">Register Number</th>
+                <th class="header__item filter__link" scope="col">Username</th>
+                <th class="header__item filter__link" scope="col">Phone Number</th>
+                <th class="header__item filter__link" scope="col">Email</th>
+                <th class="header__item filter__link" scope="col">Password</th>
+             
+            </tr>
+          </thead>
+          <tbody >
+            <% AlumnisList.forEach(alumni => { %>
+              <tr class="table-row">
+                <td class="table-data"><input type="checkbox" name="checkbox" value="<%= alumni._id %>" onchange="this.form.submit()">
+                  <td class="table-data"><%= alumni.reg %></td>
+                  <td class="table-data"><%= alumni.txt %></td>
+                  <td class="table-data"><%= alumni.phno %></td>
+                  <td class="table-data"><%= alumni.email %></td>
+                  <td class="table-data"><%= alumni.pswd %></td>
+                 
+                  
+                </tr>
+                <%})%>
+          
+       
+          </tbody>
+        </table>
+      </div>
+    </form>  
+</body>
+</html>

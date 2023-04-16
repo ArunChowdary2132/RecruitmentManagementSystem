@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="Anika_logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/dash.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+ 
+  <section id="lenovo">
+    <div class="row container">
+      <div class="col-3 left-col links">
+        <ul class="right">
+          <li class="llisthead"><a  href="/admindash">Admin Dashboard</a></li><br>
+          <li class="llist"><a class="ham" href="#link1" onclick="loadContent('studentinfo')">Student Info</a></li><br class="brreak">
+          <li class="llist"><a class="ham" href="#link2" onclick="loadContent('alumniinfo')">Alumni Info</a></li><br class="brreak">
+          
+          <li class="llist"><a class="ham" href="#link3" onclick="loadContent('ongoing')">Add Ongoing Drives</a></li><br class="brreak">
+          <li class="llist"><a class="ham" href="#link4" onclick="loadContent('delongoing')">Ongoing Drives</a></li><br class="brreak">
+          <li class="llist"><a class="ham" href="#link5" onclick="loadContent('results')">Add Drives Result</a></li><br class="brreak">
+          <li class="llist"><a class="ham" href="#link5" onclick="loadContent('delresults')">Drives Result</a></li><br class="brreak">
+          <li class="llist"><a class="ham" href="/images/offer letters.zip" onclick="loadContent('offer letters')">Call Letters</a></li><br class="brreak">
+          <li class="llist"><a class="ham" href="/images/Resume.zip" onclick="loadContent('offer letters')">Resume</a></li><br class="brreak">
+          <li class="llist"><a class="ham" href="/" onclick="loadContent('index')">Logout</a></li><br class="brreak">
+         
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+  </div>
+      <div class="col-9 right-col conntent">
+        <div id="content">
+          <img class="mainimg" src="images/slide1.jpg" width="1426" height="690" alt="">
+        </div>
+      </div>
+    </div>  
+  </section>
+
+ 
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script>
+  $(window).scroll(function () {
+    if ($(window).scrollTop()) {
+      $("nav").addClass("fixed-top");
+    } else {
+      $("nav").removeClass("fixed-top");
+    }
+  })
+
+  function scrollWin() {
+    window.scrollTo(0, 1390);
+  }
+
+  function scrollWindow() {
+    window.scrollTo(0, 1870);
+  }
+
+
+  function loadContent(url) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", url, true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      document.getElementById("content").innerHTML = xhr.responseText;
+    }
+  };
+  xhr.send();
+}
+const hamburger = document.querySelector(".hamburger");
+const bodyScroll = document.querySelector("body");
+const navMenu = document.querySelector(".right");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+   bodyScroll.style.overflow="hidden";
+})
+
+document.querySelectorAll(".ham").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+  bodyScroll.style.overflow="auto";
+}))
+
+
+
+
+
+</script>
+
+</html>
